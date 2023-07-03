@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rick and Morty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+      div>a{
+        text-decoration: none;
+        color: #2ee64c;
+      }
+    </style>
+  </head>
+  <body class="text-bg-dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark "
+    data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.pinimg.com/564x/65/39/76/653976da576e62a411088b5197ab63e8.jpg" alt="Logo" height="35" class="d-inline-block align-text-top">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-uppercase" aria-current="page" href="/">
+                    <i class="bi bi-house-door-fill"></i>
+                    Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="filter-human" class="nav-link text-uppercase" href="#">
+                    <i class="bi bi-person-fill"></i>
+                    Human</a>
+              </li>
+              <li class="nav-item">
+                <a id="filter-alien" class="nav-link text-uppercase" href="#"><i class="bi bi-eye-fill"></i>
+                    Alien</a>
+              </li>
+              <li class="nav-item">
+                <a id="filter-alive" class="nav-link text-uppercase" href="#">
+                    <i class="bi bi-check-circle-fill"></i>
+                    Alive</a>
+              </li>
+              <li class="nav-dead">
+                <a id="filter-human" class="nav-link text-uppercase" href="#">
+                    <i class="bi bi-x-circle-fill"></i>
+                    Dead</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://firebasestorage.googleapis.com/v0/b/socialme-54935.appspot.com/o/image%2FRick1.jpg?alt=media&token=591a9f74-5393-494d-80db-fe8f8f679c15" class="d-block w-100 h-40" alt="Rick 1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://firebasestorage.googleapis.com/v0/b/socialme-54935.appspot.com/o/image%2FRick2.jpg?alt=media&token=d84679cb-0f68-44ff-96c1-d2c45c4a2b7b" class="d-block w-100 h-40" alt="Rick 2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://firebasestorage.googleapis.com/v0/b/socialme-54935.appspot.com/o/image%2FRick4.jpg?alt=media&token=17c66072-ed89-44e7-a43e-0e471b83f261" class="d-block w-100 h-40" alt="Rick 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </br>
+      <div class="container text-center">
+        <h1 class="display-4">Characters</h1>
+        <div id="images" class="row">
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script> 
+</body>
+</html>
